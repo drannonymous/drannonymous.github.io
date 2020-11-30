@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DrAnonymous</title>
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google" content="notranslate" />
+<meta property="og:image" content="../img/VqgatEs.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="113">
+<meta name="classification" content="Novelty">
+<meta property="og:title" content="GEEKtyper.com - fsociety">
+<meta property="og:url" content="http://geektyper.com/fsociety">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="../ASSETS/style.css">
+<link rel="stylesheet" type="text/css" href="../ASSETS/windows.css">
+<link rel="stylesheet" type="text/css" href="mod.css">
+<script type="a9ba99147c595b4fa32d48a7-text/javascript" src='../ASSETS/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="../ASSETS/spectrum.css">
+<script type="a9ba99147c595b4fa32d48a7-text/javascript" src="../ASSETS/spectrum.js"></script>
+<meta name="viewport" content="width=320" />
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../ASSETS/analytics.js','ga');
+
+  ga('create', 'UA-45751574-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+
+jQuery(window).load(function() {
+ showDraggable("#Audio");
+  document.getElementById('Numbers').style.display = "block";
+  $("#BigFolder").toggle();
+ 
+});
+</script>
+<script src='../ASSETS/jquery.mousewheel.min.js' type="a9ba99147c595b4fa32d48a7-text/javascript"></script>
+<script src='../ASSETS/script.js' type="a9ba99147c595b4fa32d48a7-text/javascript"></script>
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+getKernel = '../ASSETS/tq.txt';
+Typer.file = (getKernel);
+Typer.init();
+</script>
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+
+
+var dragContainer = $("body");
+var currentDragData = {
+    offset: {x:0, y:0},
+    target: null
+};
+
+$(document).ready(function(e) {
+    $(document).delegate(".dragme", "mousedown", function(e) {
+        if(!currentDragData.target) {
+            if($(e.currentTarget).hasClass("dragme") && !$(e.target).closest(".folder").length) {
+                currentDragData.target = $(e.currentTarget);
+                currentDragData.target.parent().append(currentDragData.target);
+                currentDragData.offset.x = e.pageX - currentDragData.target.offset().left;//e.offsetX;
+                currentDragData.offset.y = e.pageY - currentDragData.target.offset().top;//e.offsetY;
+            }
+        }
+    });
+	
+    $(document).delegate(".dragme #close", "mouseup", function(e) {
+		$(e.currentTarget).closest(".dragme").hide();
+
+    });
+	/*
+	$(document).delegate(".dragme .folder", "mouseup", function(e) {
+
+		currentDragData.target = null;
+
+	});*/
+	
+    $(document).delegate(".dragme", "mouseup", function(e) {
+        if(currentDragData.target) {
+            currentDragData.target = null;		
+        }	
+    });
+    
+    $(document).mousemove(function(e) {
+        if(currentDragData.target) {
+            e.preventDefault();
+            currentDragData.target.offset({
+                left: e.pageX - currentDragData.offset.x,
+                top: e.pageY - currentDragData.offset.y
+            });
+        }
+    });
+});
+
+function showDraggable(d) {
+	$(d).toggle();
+	$(d).parent().append($(d));
+}
+</script>
+</head>
+<script src="../ASSETS/rocket-loader.min.js" data-cf-settings="a9ba99147c595b4fa32d48a7-|49"></script><body onload="startTime()">
+<img src="kde.png" style="left:0px;top:0px;width:100%;" />
+<div id='AccessGranted' class="dialog" style="display:none;"><h1>ACCESS GRANTED</h1></div>
+<div id='AccessDenied' class="dialog" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><h1>ACCESS DENIED</h1></div>
+<div id='LevelRequired' class="dialog" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><h1>SECURITY BREACH</h1><h2>LEVEL 3 ACCESS REQUIRED</h2></div>
+<div id='Downloading' ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Downloading...</h1>Critical Data<br><img src='../ASSETS/img/downloading.gif'></div>
+<div id='Rat' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src='../ASSETS/img/rat.gif'></div>
+<div id='Initializing' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Encrypting</h1><img src="../img/PTHgj1N.gif"></div>
+<div id='Scan' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Satellite Uplink</h1>Interfacing via Stuttgard<img src="../img/nhk5its.gif"></div>
+<div id='Map' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Tracing Contact</h1><img src="../img/vOxo92o.gif"></div>
+<div id='Countdown' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><h1>Purge Facility</h1>Purging will commence in:<br><br><br><img src='../ASSETS/img/countdown.gif'><br><br></div>
+<div id='Password' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><h1>Purge Facility?</h1>Confirm password<br><img src='../ASSETS/img/password.gif'></div>
+<div id='Poke' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>PROJECT SIOP-62</h1>Nuclear Weapons Program<img src="../img/Ec2Z2eb.gif"></div>
+<div id='Hash' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Password Decryptor</h1>Calculating Hashes<br><img src='../ASSETS/img/hash.gif'></div>
+<div id='Pony' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img src="../img/yb7MK0i.gif"></div>
+<div id='SystemFailure' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""></div>
+<div id='ConnectionLost' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-="">Connection Lost<h2>Facility Offline</h2></div>
+<div id='Breach' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>SECURITY ALERT</h1>INTERIOR EXOGEN BREACH<img src='../ASSETS/img/breach.gif'></div>
+<div id='Evacuate' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img style="background:none;" id="close" src="../ASSETS/img/close1.png" /><h1>FACILITY BREACHED</h1>CRITICAL EXOGEN BREACH<img src='../ASSETS/img/evacuate.gif'></div>
+<div id='Query' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" />Interpol database<img src="../img/WZYdsTD.gif"></div>
+<div id='Console' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" />Compiling Nodes<br><br><img src="../img/msmvE09.gif"></div>
+<div id='Deploy' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Activating HAWK</h1>Engage all enemy vehicles<img src="../img/snY9WtD.gif"></div>
+<div id='Numbers' ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img src="../img/id2kyxB.gif"></div>
+<div id='Radar' ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" onclick="if (!window.__cfRLUnblockHandlers) return false; $(&quot;#Radar&quot;).toggle();" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src='../ASSETS/img/radar.gif'></div>
+<div id='Irc' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src='../ASSETS/img/irc.gif'></div>
+<div id='Tracing' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src="../img/NnVSoQT.gif"></div>
+<div id='Neurotoxin' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1>Flooding Facility</h1>Preparing Neurotoxin Emiters<br><br><img src="../img/eHaZXmm.gif"></div>
+<div id='Audio' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="background:rgba(0,0,0,0.9);text-align:left;height:500px;display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" />
+<div id='console'>
+<button id="button" title="Write code for me" onclick="if (!window.__cfRLUnblockHandlers) return false; var x = setInterval(function(){
+        Typer.addTextAuto(12);
+}, 30);" data-cf-modified-a9ba99147c595b4fa32d48a7-="">Automate</button>
+<br>
+<br>
+<img style="width:100px;height:100px;" src="ecrp.png" /><br>
+Central Mainframe <br /></br>Authorized-access only</br>Press F2 or TAB for help, or type to begin.
+</div>
+</div>
+<div id='Flash' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src="../img/Bua5h62.gif"></div>
+<div id='Sequence' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src="../img/LlseBPd.gif"></div>
+<div id='Pipe' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src='../ASSETS/img/pipe.gif'></div>
+<div id='Stability' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src='../ASSETS/img/stability.gif'></div>
+<div id='Random' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><img src="../img/XJsjXT1.gif"></div>
+<div id='BigFolder' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;background:rgba(0,30,60,0.8);" data-cf-modified-a9ba99147c595b4fa32d48a7-="">
+<img id="close" src="../ASSETS/img/close1.png" />
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Downloading&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>DL Data</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Hash&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Hash</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Console&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Terminal</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Initializing&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Decryptor</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Map&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Map</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Scan&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Scan 6</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Query&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Query Db</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Deploy&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Deploy</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Irc&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Chat</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Tracing&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Trace</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Neurotoxin&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Neuro</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Rat&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Infect</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#AccessDenied&quot;);document.getElementById(&quot;accessdenied&quot;).play();" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Root</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Poke&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>SIOP</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Sequence&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Sequence</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Random&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Random</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Stability&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Stability</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Pipe&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Pipe</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Audio&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Audio</p></div>
+</div>
+<div id='Help' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-="">
+<img id="close" src="../ASSETS/img/close1.png" /><img src='../ASSETS/img/hints.png'>
+<hr />
+<p>Stats & Achievements</p>
+<div id="LetterCount"></div><br>
+<div id="getAchievement1" class="ac"></div>
+<div id="getAchievement2" class="ac"></div>
+<div id="getAchievement3" class="ac"></div>
+<div id="getAchievement4" class="ac"></div>
+<div id="getAchievement5" class="ac"></div>
+<div id="getAchievement6" class="ac"></div>
+<div id="getAchievement7" class="ac"></div>
+<div id="getAchievement8" class="ac"></div>
+<div id="getAchievement9" class="ac"></div>
+<div id="itemz" style="position:fixed; bottom:20px; right:20px; overflow:hidden;  background-color:#ccc; height:90px; z-index:17">
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+	</script>
+<script type="a9ba99147c595b4fa32d48a7-text/javascript" src="../ASSETS/f.txt">
+	</script>
+</div>
+</div>
+<div id='CustomWindow' class="dragme" ondragstart="if (!window.__cfRLUnblockHandlers) return false; return false;" style="display:none;" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><img id="close" src="../ASSETS/img/close1.png" /><h1 id="bigtitle"></h1><p id="smalltitle"></p><img id="customimage" src='#'>
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+bigtitle = localStorage.getItem("bigtitle") || 'Click Edit to set the title';
+smalltitle = localStorage.getItem("smalltitle") || 'Click Edit to set the title';
+customimage = localStorage.getItem("customimage") || '../ASSETS/img/placeholder.png';
+document.getElementById("bigtitle").innerHTML = bigtitle;
+document.getElementById("smalltitle").innerHTML = smalltitle;
+document.getElementById("customimage").src = customimage;
+</script>
+</div>
+<script type="a9ba99147c595b4fa32d48a7-text/javascript">
+
+
+
+</script>
+
+<div id="center">
+</div>
+<div id="dragme">
+</div>
+<div id="folders" style="left:30px;">
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Downloading&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>DL Data</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Console&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Terminal</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; showDraggable(&quot;#Hash&quot;);" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Decryptor</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; $(&quot;#Help&quot;).toggle();" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>Help</p></div>
+<div class="folder" onclick="if (!window.__cfRLUnblockHandlers) return false; $(&quot;#BigFolder&quot;).toggle();" data-cf-modified-a9ba99147c595b4fa32d48a7-=""><p>All Scripts</p></div>
+<div id="result2"></div>
+</div>
+<script src='../ASSETS/keyboard_other.js' type="a9ba99147c595b4fa32d48a7-text/javascript"></script>
+<audio loop id="caution">
+<source src="../ASSETS/mp3/caution.mp3" type="audio/mp3" />
+</audio>
+<audio loop id="purge">
+<source src="../ASSETS/mp3/caution.mp3" type="audio/mp3" />
+</audio>
+<div class="social_container" style="position:fixed; bottom:0px;right:20px;">
+<ul class="socials">
+<span class="facebook">
+<a href="http://www.facebook.com/sharer/sharer.php?u=http://" target="_blank"><img alt="facebook" src="../img/vNOyGzt.jpg"></a>
+</span>
+<span class="twitter">
+<a href="http://twitter.com/intent/tweet?text=Check+Out+----.com:&amp;url=http://" target="_blank"><img alt="twitter" src="../img/vbXtN58.jpg"></a>
+</span>
+</ul>
+</div>
+<script src="../ASSETS/rocket-loader.min.js" data-cf-settings="a9ba99147c595b4fa32d48a7-|49" defer=""></script></body>
+</html>
+
