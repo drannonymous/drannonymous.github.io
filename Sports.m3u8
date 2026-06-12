@@ -1,16 +1,7 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://www.beinsports.com/_next/image?url=%2Fimages%2Fsmart_banner_logo.png&w=128&q=75" group-title="Sports",beIN Sports 3
-http://27.124.71.27/beIN_Sports_3/tracks-v1a1/mono.ts.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/Kjf01KRG/20260604-090015.jpg" group-title="Sports",FIFA +
-https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://www.beinsports.com/_next/image?url=%2Fimages%2Fsmart_banner_logo.png&w=128&q=75" group-title="Sports",beIN Sports 2
-http://27.124.71.27/beIN_Sports_2/tracks-v1a1/mono.ts.m3u8
-
-#EXTINF:-1 tvg-logo="https://ashtv.com.bd/assets/img/tsports.jpeg" group-title="Sports",T Sports
-https://tvsen7.aynaott.com/tsports-hd/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png" group-title="Sports",FIFA LIVE
+https://edge6.thebosstv.com/_ec_/main2/robi_fifa_main_720p/chunks.m3u8
 
 #EXTINF:-1 group-title="Sports",Real Madrid
 https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
@@ -23,3 +14,12 @@ https://tvsen7.aynaott.com/foxsports2/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png" group-title="Sports",FIFA+ ENG
 https://d2w9q46ikgrcwx.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-of5cbk3sav3w5/a2070a35-e753-4b0f-a35b-d69487ebe1f3/2.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.beinsports.com/_next/image?url=%2Fimages%2Fsmart_banner_logo.png&w=128&q=75" group-title="Sports",beIN Sports 3
+http://27.124.71.27/beIN_Sports_3/tracks-v1a1/mono.ts.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/Kjf01KRG/20260604-090015.jpg" group-title="Sports",FIFA +
+https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.beinsports.com/_next/image?url=%2Fimages%2Fsmart_banner_logo.png&w=128&q=75" group-title="Sports",beIN Sports 2
+http://27.124.71.27/beIN_Sports_2/tracks-v1a1/mono.ts.m3u8
