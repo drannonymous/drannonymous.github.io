@@ -1,0 +1,13 @@
+#EXTM3U
+
+
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",FIFA HD+
+https://edge6.thebosstv.com/_ec_/main2/robi_fifa_main_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",FIFA HD
+https://edge10.thebosstv.com/main2/robi_fifa_main_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",FIFA SD
+https://edge5.thebosstv.com/_ec_/main2/robi_fifa_main_480p/chunks.m3u8
+
