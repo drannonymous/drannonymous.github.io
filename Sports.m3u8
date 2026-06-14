@@ -8,12 +8,12 @@
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",FIFA +
  https://edge5.thebosstv.com/_ec_/main/Iscreen_fifa_main/main/in4_720p/chunks.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",FIFA SD
- https://livecdn.rockstreamer.com/main/Iscreen_fifa_main/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",Caze TV
+ https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",bein Sports
-http://ua.online24.pm/play/1101/350B326FB34F4B8/video.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",Win Sports
+https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",Somoy Tv
@@ -23,5 +23,5 @@ https://live.thebosstv.com:30443/dwlive/Somoy-TV/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",FiFA HD
 https://premierleagpl23.akamaized.net/hls/live/2107108/tapmad-P2s6L_FiN@L-UrU/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png-" group-title="Sports",Cricket Tv
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/refs/heads/master/fifa_tareq.png" group-title="Sports",TAPMAD
 https://premierleagpl23.akamaized.net/hls/live/2107108/Tapmad-P2s6L_EnG-FiN@L/level_0.m3u8
