@@ -1,0 +1,8 @@
+{
+  "name": "MovieBox Provider",
+  "description": "MovieBox Provider extension",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/master/ASSETS/MovieBoxProvider.cs3"
+  ]
+}
