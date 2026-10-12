@@ -1,0 +1,19 @@
+[
+  {
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/drannonymous/drannonymous.github.io",
+    "status": 1,
+    "language": "en",
+    "authors": [
+      "S.M. TAREQ"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "MovieBoxProvider",
+    "url": "https://raw.githubusercontent.com/drannonymous/drannonymous.github.io/master/ASSETS/MovieBoxProvider.cs3",
+    "name": "MovieBoxProvider"
+  }
+]
